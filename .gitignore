@@ -1,1 +1,81 @@
+# ==========================================
+# Book Recommender System - Git Ignore File
+# ==========================================
+
+# --- Python cache & temporary files ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
+# --- Jupyter/Colab checkpoints ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*.ipynb_save
+
+# --- Virtual environment folders ---
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Data files (large or sensitive) ---
+data/*.csv
+data/*.npz
+data/*.pkl
+data/*.zip
+data/*.tar
+data/*.gz
+
+# (optional) keep dataset_info.md if it's documentation
+!data/dataset_info.md
+
+# --- Model artifacts and logs ---
+*.h5
+*.pkl
+*.pt
+*.joblib
+*.sav
+*.model
+*.pickle
+*.json
+*.npy
+*.npz
+*.pkl
+logs/
+runs/
+wandb/
+
+# --- Configuration and build ---
+config/__pycache__/
+*.egg-info/
+build/
+dist/
+
+# --- IDE and OS specific files ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+Thumbs.db
+*.orig
+
+# --- Python packaging ---
+*.egg
+.eggs/
+MANIFEST
+
+# --- System files ---
+*.bak
+*.old
+*.tmp
+*.swp
 
