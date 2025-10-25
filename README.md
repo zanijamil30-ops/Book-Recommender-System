@@ -16,30 +16,29 @@ This project demonstrates data preprocessing, similarity-based recommendation, a
 - Interactive recommendation system using `ipywidgets`  
 - Configuration handled via `config/params.yaml`
 
----
+## 🏗️ Project Structure
 
-## Project Structure
+```
 Book-Recommender-System/
 │
 ├── config/
-│ └── params.yaml # Configuration parameters
+│   └── params.yaml                # Configuration parameters
 │
 ├── data/
-│ ├── dataset_info.md # Dataset description
-│ ├── Books.csv # (optional) Book metadata
-│ ├── Ratings.csv # (optional) User ratings
-│ └── Users.csv # (optional) User information
+│   ├── dataset_info.md            # Dataset description
+│   ├── Books.csv                  # (optional) Book metadata
+│   ├── Ratings.csv                # (optional) User ratings
+│   └── Users.csv                  # (optional) User information
 │
 ├── src/
-│ └── book_recommender_system.py # Main recommendation logic
+│   └── book_recommender_system.py # Main recommendation logic
 │
-├── main.py # Entry point to run the project
-├── requirements.txt # Required Python libraries
-├── .gitignore # Files/folders to exclude from Git
-├── LICENSE # MIT open-source license
-└── README.md # Project documentation
-
----
+├── main.py                        # Entry point to run the project
+├── requirements.txt               # Required Python libraries
+├── .gitignore                     # Files/folders to exclude from Git
+├── LICENSE                        # MIT open-source license
+└── README.md                      # Project documentation
+```
 
 ## ⚙️ Installation
 
