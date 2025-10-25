@@ -105,7 +105,7 @@ You’re free to use, modify, and distribute it with proper credit.
 
 👩‍💻 Author
 
-Zani Jamil
+Zainab Jamil
 📧 zainab-jamil-b73824329 (linkedin )
 GitHub: zanijamil30-ops
 
