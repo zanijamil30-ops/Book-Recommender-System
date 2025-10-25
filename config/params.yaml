@@ -1,1 +1,32 @@
+# ==========================================
+# Book Recommender System Configuration
+# ==========================================
 
+# --- Filtering Parameters ---
+RATING_THRESHOLD: 5          # Keep ratings strictly greater than this
+MIN_USER_RATINGS: 20         # User must have at least this many ratings to be "frequent"
+MIN_BOOK_RATINGS: 5          # Books must have at least this many ratings to be included
+
+# --- Recommendation Settings ---
+TOP_K: 5                     # Number of recommendations to return (including the selected book)
+
+# --- File Paths ---
+DATA_PATHS:
+  BOOKS_FILE: "data/Books.csv"
+  RATINGS_FILE: "data/Ratings.csv"
+  USERS_FILE: "data/Users.csv"
+  MERGED_OUTPUT: "data/merged_filtered_small.csv"
+  MATRIX_FILE: "data/R_books_users.npz"
+  MAPPINGS_FILE: "data/mappings.pkl"
+
+# --- Model Configuration ---
+MODEL:
+  METRIC: "cosine"           # Similarity metric for NearestNeighbors
+  ALGORITHM: "brute"         # Distance computation algorithm
+  N_JOBS: -1                 # Use all CPU cores available
+
+# --- Output and Logging ---
+LOGGING:
+  SHOW_SHAPES: true          # Print dataframe shapes for debugging
+  VERBOSE: true              # Show detailed output messages
+  SAVE_INTERMEDIATE: true    # Save intermediate results and mappings
