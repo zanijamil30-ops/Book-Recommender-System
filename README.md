@@ -25,19 +25,16 @@ Book-Recommender-System/
 │   └── params.yaml                # Configuration parameters
 │
 ├── data/
-│   ├── dataset_info.md            # Dataset description
-│   ├── Books.csv                  # (optional) Book metadata
-│   ├── Ratings.csv                # (optional) User ratings
-│   └── Users.csv                  # (optional) User information
+│   └── dataset_info.md            # Dataset description or data link info
 │
 ├── src/
 │   └── book_recommender_system.py # Main recommendation logic
 │
-├── main.py                        # Entry point to run the project
-├── requirements.txt               # Required Python libraries
 ├── .gitignore                     # Files/folders to exclude from Git
 ├── LICENSE                        # MIT open-source license
-└── README.md                      # Project documentation
+├── README.md                      # Project documentation
+├── main.py                        # Entry point to run the project
+└── requirements.txt               # Required Python libraries
 ```
 
 ## ⚙️ Installation
@@ -109,7 +106,7 @@ You’re free to use, modify, and distribute it with proper credit.
 👩‍💻 Author
 
 Zani Jamil
-📧 zainab-jamil-b73824329
+📧 zainab-jamil-b73824329 (linkedin )
 GitHub: zanijamil30-ops
 
 ⭐ Acknowledgment
