@@ -16,10 +16,26 @@ import gc
 from typing import List
 
 # --- User-tunable params ---
-RATING_THRESHOLD = 5          # keep ratings strictly greater than this
-MIN_USER_RATINGS = 20        # user must have at least this many ratings to be "frequent"
-MIN_BOOK_RATINGS = 5         # optionally keep books with >= this many retained ratings
-TOP_K = 5                    # number of recommendations to return (including query)
+# RATING_THRESHOLD = 5          # keep ratings strictly greater than this
+# MIN_USER_RATINGS = 20        # user must have at least this many ratings to be "frequent"
+# MIN_BOOK_RATINGS = 5         # optionally keep books with >= this many retained ratings
+# TOP_K = 5                    # number of recommendations to return (including query)
+# --- Load configuration parameters from YAML ---
+import yaml
+
+with open("config/params.yaml", "r") as f:
+    params = yaml.safe_load(f)
+
+RATING_THRESHOLD = params["RATING_THRESHOLD"]
+MIN_USER_RATINGS = params["MIN_USER_RATINGS"]
+MIN_BOOK_RATINGS = params["MIN_BOOK_RATINGS"]
+TOP_K = params["TOP_K"]
+
+print(f"✅ Loaded parameters from YAML: "
+      f"RATING_THRESHOLD={RATING_THRESHOLD}, "
+      f"MIN_USER_RATINGS={MIN_USER_RATINGS}, "
+      f"MIN_BOOK_RATINGS={MIN_BOOK_RATINGS}, "
+      f"TOP_K={TOP_K}")
 
 # Helpful: reduce pandas warnings / show shapes
 pd.options.mode.chained_assignment = None
