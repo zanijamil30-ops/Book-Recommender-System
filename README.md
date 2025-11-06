@@ -7,6 +7,7 @@ It uses collaborative filtering with a **K-Nearest Neighbors (KNN)** algorithm t
 This project demonstrates data preprocessing, similarity-based recommendation, and configuration management using YAML for clean and reproducible experimentation.
 
 ---
+![screenshot](https://github.com/user-attachments/assets/ec814c73-6302-4cbf-af50-f7395100d8bf)
 
 ## 🚀 Features
 - Reads and processes **Books**, **Users**, and **Ratings** datasets  
